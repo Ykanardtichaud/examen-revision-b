@@ -35,11 +35,22 @@
   border-radius: 5px;
   color: #54819e;
   text-align: center;
-  transition: color 0.5s;
 }
 
 .article-title {
   margin-bottom: 12px;
   font-size: 24px;
-  transition: transform 0.5s;
+}
+
+.article .article-title {
+  transition: transform 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.2s;
+}
+.article:hover .article-title {
+  font-size: 29px;
+}
+
+.article:hover {
+  color: #1d3557;
 }
