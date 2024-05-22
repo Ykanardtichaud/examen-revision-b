@@ -7,6 +7,13 @@
   font-size: 24px;
   border-radius: 5px;
   cursor: pointer;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+:hover.button {
+  background-color: #a8dadc;
+  color: #1d3557;
 }
 
 .star {
@@ -14,6 +21,12 @@
   margin-bottom: 20px;
   font-size: 48px;
   cursor: pointer;
+  transition: transform 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+:hover.star {
+  transform: rotate(-45deg);
 }
 
 .article {
