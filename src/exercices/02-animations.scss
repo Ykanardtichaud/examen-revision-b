@@ -6,7 +6,9 @@
     background: #ffc300;
     border-radius: 5px;
     color: #003566;
-    box-shadow: 0px 0px 4px 0px rgba(#003566, 0.25);
+    box-shadow: 0px 0px 4px 0px rgba(#003566, 0.25),
+      inset 0px 0px 0px 3px rgba(#fff, 0); /* Add an invisible border */
+    animation: pulse 1.5s ease-in-out infinite;
   }
 
   .loader {
@@ -18,5 +20,17 @@
     background: #ffbe0b;
     border-radius: 50px;
     color: #fff;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 3px 0px rgba(#003566, 0.25);
+  }
+  50% {
+    box-shadow: 0px 0px 15px 0px rgba(#003566, 0.5);
+  }
+  100% {
+    box-shadow: 0px 0px 3px 0px rgba(#003566, 0.25);
   }
 }
